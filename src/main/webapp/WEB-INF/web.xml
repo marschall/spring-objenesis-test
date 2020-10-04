@@ -1,0 +1,20 @@
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+   metadata-complete="true">
+
+  <display-name>Class Availability Check</display-name>
+  <description>Checks if certain application server implementation classes are visible.</description>
+  <distributable/> 
+      
+  <servlet>
+    <servlet-name>SpringObjenesisTest</servlet-name>
+    <servlet-class>com.github.marschall.spring.objenesis.test.SpringObjenesisTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SpringObjenesisTest</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
